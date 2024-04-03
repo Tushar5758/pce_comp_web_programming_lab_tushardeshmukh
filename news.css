@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .News {
+    width: 20%;
+    padding: 20px;
+    height: auto; /* Adjusted for content */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 20px; /* Space between news items */
+  }
+  
+  .news-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjusted gap for better spacing */
+    background: linear-gradient(135deg, #a8edcd 0%, #fed6e3 100%);
+    padding: 30px 5%;
+    justify-content: center; 
+  }
+  :root {
+    --navbar-height: 60px; /* Adjust based on the actual height of your navbar */
+}
+
+.head {
+  background: linear-gradient(135deg, #a8edcd 0%, #fed6e3 100%);
+  padding: 20px 5%;
+    padding-top: calc(20px + var(--navbar-height)); /* Add navbar height to top padding */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  
+  input {
+    width: 20%; /* Adjusted for better visibility */
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+    background-color: #f0e68c;
+  }
+  
+  .news-img {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #a8edcd 0%, #fed6e3 100%);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .news-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Ensure rounded corners for the image */
+  }
+  
+  .source {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-size: 0.9em; /* Slightly smaller font size */
+  }
+  
+  /* Additional styles for responsiveness */
+  @media (max-width: 768px) {
+    .News {
+      width: 45%; /* Adjust for smaller screens */
+    }
+  
+    input {
+      width: 50%; /* Larger search bar on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .News {
+      width: 90%; /* Adjust for mobile screens */
+    }
+ 
+    .head,
+    .news-div {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    input {
+      width: 80%; /* Full-width search bar on mobile screens */
+      margin-bottom: 20px; /* Space below the search bar */
+    }
+  }
+  

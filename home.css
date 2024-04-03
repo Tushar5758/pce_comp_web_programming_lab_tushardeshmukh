@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+#top{
+    display: inline-block;
+    padding-left: 20px;
+    color: #A3DA8D;
+    font-size: 65px;
+    height: 20px;
+    
+
+    
+    
+}
+#headline{
+
+    display: inline-block;
+    padding-left: 350px;
+    font-size: 45px;
+    font-family:perpetua;
+    color: white;
+    transition: all 2s ease;
+
+    
+}
+#notfound{
+    color: red;
+    margin-right: 15px;
+   font-size: 20px;
+    
+}
+#upper
+{
+    background: linear-gradient(to right, #000000, #0f9b0f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+   /* background: linear-gradient(to bottom, #000066 0%, #660033 100%);*/
+    
+    padding-bottom: 50px;
+    position: relative;
+    animation-name: slowMotion;
+    animation-duration: 5s; /* Adjust the duration for slower or faster motion */
+    animation-timing-function: ease-in-out;
+    
+}
+.notification{
+    color: black;
+    position: absolute;   
+    background-color: #C1F2B0;
+    font-size: 20px;
+    /*#03081d;*/
+    
+    
+}
+.slide{
+    background-color:#228B22;
+    height: 98%;
+    width: 280px;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+
+}
+h1{
+    top: 0;
+    left: 0;
+}
+/*
+#input1{
+    display: none;
+    visibility: hidden;
+} */
+#menu{
+    font-size: 20px;
+    text-align: center;
+
+    padding-right: 30px;
+    padding-top: 3px;
+    background-color: #87A922;
+    color: black;
+}
+/*
+#symbol{
+    background-color:red;
+    position: absolute;
+    height: 47px;
+    width: 50px;
+    top: 0;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 10px;
+}
+*/
+ul li a{
+    font-size: 23px;
+    line-height: 80%;
+    padding: 25px 30px;
+    display: block;
+    color: #f4b79b;
+    text-decoration: none;
+    
+}
+ul li a i{
+    width: 50px;
+    padding: 0;
+    font-size: 30px;
+}
+/*#navbar{
+    color: white;
+    /*background-color: black;
+   padding-bottom: 300px;
+   display: inline-block;
+   padding-right: 50px;*/
+  /* height: 100vh;
+   width: 200px;
+   padding-top: 40px;
+   margin: 0;
+   background: linear-gradient(to bottom,black,black);
+   font-size: 20px;
+   position: relative;
+   left: 50px;
+    
+}*/
+#highlight2{
+    color: white;
+}
+
+
+.searchbar{
+   display: flex;
+   position: absolute;
+   right: 2px;
+   bottom: 0;
+   font-weight: 30px;
+    
+    
+}
+#search1 {
+    
+      padding: 10px;
+      width: 150px;
+      border: 2px solid black;
+      border-radius: 5px;
+      height: 8px;
+      font-size: 20px;
+      margin-right: 5px;
+}
+#search-icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+#log-in{
+    display: block;
+    position: absolute;
+     right: 5px;
+     line-height: 6px;
+     top: 12px;
+     font-size: 29px;
+     color:black;
+    }
+#menu_icon{
+    left: 0;
+    position: absolute;
+}  
+#container{
+    position: absolute;
+    background-color: rgb(245, 244, 239);
+}
+#content{
+    display:block;
+    position:absolute;
+    padding-top: 100px;
+    padding-left: 0px;
+    right: 0px;
+    text-align: left;
+    width: 550px;
+    height: 500px;
+    top: 150px;
+    background-color: rgb(245, 244, 239);
+    line-height: 45px;
+} 
+#first
+{
+    font-size: 65px;
+} 
+#second
+{
+    font-size: 35px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: red;
+    line-height: 50px;
+    position:relative;
+    padding-top: 20px;
+    
+}
+#steps{
+    line-height: 60px;
+    position: relative;
+    padding-top: 30px;
+    font-size: 18px;
+}
+#third {
+   padding: 10px;
+   
+}
+#fourth{
+    padding: 10px;
+}
+#fifth{
+    padding: 10px;
+}   
+.highlight{
+    color: red;
+}
+#middle{
+    
+    
+    height: 170px;
+    float: right;
+    
+   
+    
+}
+#middle1{
+    position: relative;
+   
+    
+    background-color: #C1F2B0;
+    padding-left: 20px;
+    width: 50%;
+    /*background-color: #092635;*/
+    font-size: 20px;
+    color: black;
+    
+}
+
+#question{
+    padding: 10px;
+}
+h4{
+    padding-bottom: 20px;
+    font-size: 20px;
+    position: relative;
+    left:0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+@frames slowMotion {
+    0% {
+      opacity: 0.4;
+      transform: translateY(0px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .slow-motion {
+    animation: slowMotion 3s cubic-bezier(0.16, 1, 0.3, 1) infinite; /* Adjust the duration (5s) and timing function for slower motion */
+  }
+  /*css for thrid page*/
+  /*start*/
+  
+  #midimg{
+    position: relative;
+    
+    width: 1500px;
+    padding-left: 0px;
+    left: 0;
+    float: left;
+    background-color: #03081d;
+  }
+  #revolution{
+    position: absolute;
+    color: white;
+    top: 50px;
+    left: 70px;
+    font-size: 23px;
+    font-family:cursive;
+
+
+  }
+  #rev{
+    position: absolute;
+    left: 900px;
+    top: 150px;
+    color: white;
+    font-size: 20px;
+    font-family:cursive;
+ }
+.highlight2{
+    color: #d2784e;;
+ }
+ .highlight1{
+    color:#FFD369;
+    font-family: "Gill Sans", sans-serif;
+    
+ }
+
+ 
+  /*css for bottom page */
+  #bottom-page{
+    
+    background-color:#C1F2B0;
+    width: 1600px;
+    height: 500px;
+    padding-top: 150;
+    display: inline-block;
+    font-family: cursive;
+    
+  }
+  #stay{
+    padding-left: 80px;
+    padding-top: 50px;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    
+  }
+  #useful-links{
+    color: black;
+    display: block;
+    position:absolute;
+    padding-top: 70px;
+    padding-left: 450px;
+ }
+ #useful-links1{
+    padding-bottom: 20px;
+ }
+ #contacting{
+    color: black;
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 70px;
+ }
+ .address{
+    line-height: 30px;
+    font-size: 19px;
+    font-family:serif;
+    font-weight: 9px;
+ }
+ #followus{
+    color: black;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    margin-left: 1200px;
+    margin-top: 70px;
+    margin-right: 0;
+ }
+ #follow{
+    
+        float: left;
+        padding-top: 19px;
+        padding-right: 25px;
+   
+    
+ }
+ 
+ 
+
+
+

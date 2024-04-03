@@ -1,0 +1,83 @@
+<html>
+    <head>
+
+        <title>about us</title>
+        <link rel="stylesheet" href="about.css">
+        
+        <style>
+            body{
+                background-color: #C1F2B0;;
+            }
+            .about img 
+            {
+                animation: fadeIn 8s linear forwards;
+            }
+            @keyframes fadeIn
+            {
+                0%{
+                    opacity: 0;
+                }             
+                25%{
+                    opacity: 4;
+                }
+                50%{
+                    opacity: 7;
+                }
+            }
+          
+        </style>
+    </head>
+    <body>
+        
+
+
+        
+        <img src="background - Copy.jpg" id="backgroundimage"  alt="">
+        <div id="navbar-placeholder"></div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+});
+</script>
+        
+    </div>
+    <h1 id="headline" style="color: black;
+                            margin-top: 100px;">About us</h1> 
+        <!--<div class="about">
+            <h1 style="position: absolute;
+                        top: 0;
+                        margin-top: 30px;
+                        margin-left: 70px;
+                        font-size: 50px;
+                        color: white;
+                        background-color: black;
+                        padding-left: 30px;
+                        padding-right: 60px;">About us</h1>-->
+            <img src="about1.png" id="image1"class="image" alt="">
+            <img src="about2.png" id="image2"class="image" alt="">
+            <img src="about3.png" id="image3"class="image" alt="">
+            <img src="about4.png" id="image4"class="image" alt="">
+        </div>
+
+        <div>
+            <img src="car1.png" id="car">
+            <h3>Our Mission</h3>
+            <br>
+           <p id="info">Our mission at <span id="red"> ChargeHub</span> is to accelerate the adoption of electric <br> vehicles by providing easy access to a comprehensive network of <br>charging stations. We aim to contribute to a greener and more <br>
+             sustainable future by supporting the growth of EV infrastructure and <br>reducing reliance on fossil fuels.</p>
+             <br>
+             <h3>Our Commitment to Sustainability</h3>
+             <br>
+             <p id="info">At <span id="red">ChargeHub</span> sustainability is at the core of everything we do. <br> We are committed to reducing carbon emissions, combating climate <br> change, and promoting environmental stewardship through the <br> widespread adoption of electric vehicles and the development of EV infrastructure.
+
+             </p>
+        </div>
+          
+        
+    
+    </body>
+</html>

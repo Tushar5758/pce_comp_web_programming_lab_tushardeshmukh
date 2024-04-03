@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        
+#nav {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    color: #72c311;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    color: #72c311;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #f0f0f0;
+    color: #555;
+}
+.login-button-container {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.login-button {
+    font-size: 18px;
+    color: #72c311; /* Match the nav links color */
+    background-color: #fff; /* Background color matching the nav bar */
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Consistent with nav bar shadow */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #72c311; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+    </style>
+    <div id="nav">
+        <div class="logo">
+            <img src="logo.png" alt="ChargingHub Logo">
+            <h1>ChargingHub</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="news.html" >News</a></li>
+            <li><a href="blog.php">Blog</a></li>
+            <li><a href="info.php" >Services</a></li>
+            <li><a href="contact1.html" >Contact</a></li>
+            <li><a href="feedback.php">Feedback</a></li>
+            <li><a href="profile.php">Profile</a></li>
+        </ul>    
+        <div class="login-button-container">
+            <a href="login.php" class="login-button">Login</a>
+        </div>    
+    </div>
+    <audio id="audio" src="welcome.mp3" </audio>
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+
+var audio = document.getElementById("audio");
+
+
+var navLinks = document.querySelectorAll(".nav-links a[href='index.html']");
+navLinks.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent the default link behavior
+        var targetUrl = this.getAttribute("href"); // Get the href attribute of the clicked link
+
+        // Play the audio
+        audio.play();
+
+        // Redirect after a short delay, adjust the delay to match your audio clip length
+        setTimeout(function () {
+            window.location.href = targetUrl;
+        }, 3000); // Delay in milliseconds, adjust according to the length of your audio clip
+    });
+});
+});
+        </script>
+          
+</body>
+</html>

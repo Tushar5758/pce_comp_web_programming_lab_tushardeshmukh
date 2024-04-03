@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>contact page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="contactfinal1.css">
+        
+        <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+  	<script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="contactfinal.js"></script>
+
+    </head>
+    <body">
+    <!----
+    <div id="back">
+        <div id="welcome"><?php echo welcome  your message successfully sent! ?></div>
+    </div>-->
+    <div id="navbar-placeholder"></div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+});
+</script>
+         <div id="page">
+    
+        <h4>Contact Us</h4>
+        <!--taking name and gmail for sending their opinions-->
+        <form method="post" action="contact.php" name="contact" onsubmit="check();" >
+            <div id="userinfo">
+                <!--accepting the name from user-->
+                <i class="fa-solid fa-user"></i><input type="text" name="uname" placeholder="Name*">
+                <!--<i class="fa-solid fa-user"></i><input type="text" name="uname" placeholder="Name*">-->
+                <h6 class="visible" id="valid1" style="margin-top: 200px;
+                                            margin-left: 100px;">- - enter name - -</h6>
+                <h6 class="visible" id="valid4" style="margin-top: 200px;
+                                            margin-left: 100px;">- - enter the valid name - -</h6>                           
+
+                <i class="fa-solid fa-phone"></i><input type="text" name="uphone" placeholder="91+"><br>
+                <h6 class="visible" id="valid2" style="margin-top: 200px;
+                                            margin-left: 500px;">- - enter phone number - -</h6>
+                <h6 class="visible" id="valid7" style="margin-top: 200px;
+                                             margin-left: 500px;">- - enter correct phone number - -</h6>
+                <h6 class="visible" id="valid8" style="margin-top: 200px;
+                                            margin-left: 500px;">- - enter 10 digit number - -</h6>
+                <h6 class="visible" id="valid5" style="margin-top: 200px;
+                                        margin-left: 500px;">- - enter valid phone number - -</h6>
+                <i class="fa-solid fa-envelope"></i><input type="text" class="common" name="umail" placeholder="Email*"><br>
+                <h6 class="visible" id="valid3" style="margin-top: 300px;
+                                            margin-left: 100px;">- - please enter mail - -</h6>
+                <h6 class="visible" id="valid6" style="margin-top: 300px;
+                                            margin-left: 100px;">- - enter valid mail - -</h6>                            
+                <i class="fa-solid fa-message"></i><input type="text" class="common"id="message" name="umessage" placeholder="Additional message">
+                <br>
+                <button id="button" onclick="check();">Submit</button>
+                
+            </div>
+		</form>
+        
+        <div id="frame">
+
+            <div id = "map" style = "width: 450px; height: 400px"></div>
+            <div id="contacting">
+                <h1 class="highlight1">Address</h1>
+                <h2 class="address">91+3467349856</h2>
+                <h2 class="address">5/9,Under Hill Road, Civil Lines,<br>Near Ludlow Castle,Panvel 110 054</h2>
+                <hr style="margin-left: 900px;margin-right: 140px;height:1px; background-color:red">
+                <h1 class="highlight1" >Contact Us</h1>
+                <h2 class="address">91+ 97805683904 <br>Chargehub18@gmail.com</h2>
+                <h1 class="highlight1">Follow us</h1>
+                <h1><i class="fa-brands fa-x-twitter" id="follow"></i></h1>
+                <h1><i class="fa-brands fa-linkedin"id="follow"></i></h1>
+                <h1><i class="fa-brands fa-instagram"id="follow"></i></h1>
+            </div>    
+            
+        </div>    
+
+        </div>
+
+              
+            <script>
+                // Creating map options
+                var mapOptions = {
+                   center: [18.9902, 73.1277],
+                   zoom: 10
+                }
+                
+                // Creating a map object
+                var map = new L.map('map', mapOptions);
+                
+                // Creating a Layer object
+                var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+                
+                // Adding layer to the map
+                map.addLayer(layer);
+           
+                // Creating a marker
+                var marker = L.marker([18.9902, 73.1277]);
+                
+                // Adding marker to the map
+                marker.addTo(map);
+             </script>
+    </body>
+</html>

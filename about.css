@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#backgroundimage
+{
+    width: 1530px;
+    filter: contrast(20%);
+    height: 800px;
+    padding-bottom: 20px;
+    
+    
+}
+.image
+{
+    
+    position: absolute;
+    top: 0;
+    width: 350px;
+    border-radius: 50px;
+
+}
+#headline
+{
+    position: absolute;
+    top: 0;
+    font-size: 60px;
+    margin-left: 560px;
+    margin-top: 200px;
+    color: black;
+   
+    
+}
+.image.show
+{
+    opacity: 1;
+}
+#image1
+{
+    position:absolute;
+    top: 0;
+    margin-top: 130px;
+    margin-left: 80px;
+    border-radius: 50px;
+    width: 350px;
+    transition: all 4s;
+}
+#image2{
+    margin-top: 140px;
+    margin-left: 950px;
+    width: 380px;
+}
+#image3
+{
+    margin-top: 450px;
+    margin-left: 80px;
+    width: 350px;
+}
+#image4
+{
+    margin-left: 950px;
+    margin-top:450px;
+    width: 400px;
+}
+#image5
+{
+    margin-left: 450px;
+    margin-top: 250px;
+    width: 200px;
+    filter: drop-shadow(20px red);
+}
+#car
+{
+    position: absolute;
+    top: 0;
+    margin-left: 860px;
+    margin-top: 800px;
+    background-color: black;
+}
+h3
+{
+    font-size: 40px;
+    padding-left: 30px;
+}
+#info
+{
+    font-size: 30px;
+    margin-left: 30px;
+}
+#red
+{
+    color: red;
+}

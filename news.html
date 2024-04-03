@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India News</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+});
+</script>
+
+    <div>
+        <header class='head'>
+            <h1>EV News</h1>
+            <input
+                type='text'
+                id='searchInput'
+                placeholder='Search News'
+            >
+        </header>
+        <section class='news-div' id="newsSection">
+            <h3>No News Found</h3>
+        </section>
+    </div>
+    <script src="news.js"></script>
+</body>
+</html>
